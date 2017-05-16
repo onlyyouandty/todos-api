@@ -27,6 +27,7 @@ module TodosApi
     config.generators { |g|
       g.assets false
       g.test_framework :rspec
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
     }
 
     # Only loads a smaller set of middleware suitable for API only apps.
